@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Hostel Sentinel — Offline AI Dashboard</title>
+
+  <!-- Chart.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">Smart Hostel Sentinel</div>
+        <div class="subtitle">AI Ops — Demo (Offline)</div>
+      </div>
+      <div class="top-actions">
+        <div id="status" class="muted small">Initializing...</div>
+        <div id="authArea"></div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar glass" id="sidebar">
+        <div class="sidebar-top">
+          <div>
+            <div style="font-weight:800">Dashboard</div>
+            <div class="muted small">Hostel overview</div>
+          </div>
+          <div id="roleBadge" class="role-pill">guest</div>
+        </div>
+
+        <nav id="menu" class="menu">
+          <button class="side-item active" data-view="dashboard">Overview</button>
+          <button class="side-item" data-view="map">Rooms</button>
+          <button class="side-item" data-view="issues">Issues</button>
+          <button class="side-item" data-view="ai">AI Insights</button>
+          <button class="side-item" data-view="admin" data-roles="supervisor,director">Admin</button>
+        </nav>
+
+        <div class="controls">
+          <button id="exportBtn" class="ghost">Export</button>
+          <button id="resetBtn" class="ghost">Reset</button>
+          <div class="small muted" style="margin-top:8px">Tip: offline AI uses heuristics & small models</div>
+        </div>
+      </aside>
+
+      <main id="main" class="main">
+        <div id="content"></div>
+      </main>
+    </div>
+
+    <footer class="footer muted small">Demo — data stored in your browser (localStorage). Charts: Chart.js</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
