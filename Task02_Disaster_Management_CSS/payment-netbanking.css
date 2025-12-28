@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.netbanking-container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.netbanking-container h2 {
+  color: #2f6f8f;
+  margin-bottom: 10px;
+}
+
+.amount-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+  text-align: left;
+}
+.bank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.bank-card {
+  border: 1px solid #d6e9ed;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f9fefe;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.bank-card input {
+  accent-color: #2f6f8f;
+}
+
+.bank-card:hover {
+  background-color: #e8f1f3;
+}
+.other-bank select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #2f6f8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background-color: #245a73;
+}
+.secure-note {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #666;
+}

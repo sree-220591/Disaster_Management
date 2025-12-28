@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8f9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upi-card{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    text-align: center;
+    width:90%;
+    border-radius: 10px;
+    /* color:#2f6f8f */
+}
+.qr-box img{
+    width: 180px;
+    height: 180px;
+    margin-bottom:10px;
+}
+
+.qr-box p{
+    font-size:16px;
+    font-weight:bold;
+    /* color: #555 */
+}
+.or{
+    margin: 20px 0;
+    font-weight: bold;
+    color: #999
+}
+
+.upi-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upi-input input{
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #d6e9ed;
+    font-size: 16px;
+}
+
+.upi-input button{
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2f6f8f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upi-input button:hover{
+    background-color: #245a6e;
+}
+
+footer{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #245a6e;
+}
