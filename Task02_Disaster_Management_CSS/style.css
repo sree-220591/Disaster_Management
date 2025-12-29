@@ -684,3 +684,81 @@ aside li{
 .donor-section input::placeholder{
    color: #d1e4e8;
 }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #2f6f8f;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* about.html page styling */
+
+.about-us{
+   max-width: 900 px;
+   margin: auto;
+   padding: 20px;
+}
+
+.about-us h2{
+   text-align: center;
+   color: #2f6f8f;
+   margin-bottom:20px;
+
+}
+
+.about-us h3{
+   margin-top: 40px;
+   margin-bottom: 15px;
+   color: #1f3d4d;
+}
+
+.about-text{
+   font-size:15px;
+   line-height: 1.7;
+   margin-bottom:15px;
+   text-align: justify;
+}
+
+.team-table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.team-table th,
+.team-table td{
+  border: 1px solid #d6e9ed;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.team-table th{
+  background-color: #e8f1f3;
+  color: #1f3d4d;
+}
+
+.team-table tr:nth-child(even){
+  background-color: #f9fefe;
+}
+
+.back-link{
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #2f6f8f;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
